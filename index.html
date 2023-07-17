@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script defer src="app.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="home">
+            <h1>HOME</h1>
+            <div class="home-score-board">
+                <p id="home-score"></p>
+            </div>
+            <div class="btns">
+                <button onclick="addOne_for_Home()">+1</button>
+                <button onclick="addTow_for_Home()">+2</button>
+                <button onclick="addThree_for_Home()">+3</button>
+            </div>
+        </div>
+        <div class="guest">
+            <h1>GUEST</h1>
+            <div class="home-score-board">
+                <p id="guest-score"></p>
+            </div>
+            <div class="btns">
+                <button onclick="addOne_for_Guest()">+1</button>
+                <button onclick="addTow_for_Guest()">+2</button>
+                <button onclick="addThree_for_Guest()">+3</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="result">
+        <button id="newGame" onclick="newGame()">New Game</button>
+        <div class="resultDispaly">
+            <div>
+                <p class="palyer">Best player</p>
+                <div class="value" id="playerValue"></div>
+            </div>
+            <div>
+                <p class="score">Score</p>
+                <div class="value" id="scoreValue"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
